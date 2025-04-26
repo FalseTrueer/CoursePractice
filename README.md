@@ -1,6 +1,6 @@
 Области хранения данных:
 
--     база данных на json-server
+- база данных на json-server
 - BFF (Backenmd For Frontend)
 - Redux store
 
