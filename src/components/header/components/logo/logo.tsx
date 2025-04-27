@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { Icon } from '../../../../components';
 
 const LargeText = styled.p`
@@ -15,13 +16,13 @@ const SmallText = styled.p`
 
 const LogoContainer: React.FC<{ className?: string }> = ({ className }) => {
 	return (
-		<div className={className}>
+		<Link className={className} to={'/'}>
 			<Icon id="fa-code" size="clamp(20px, 7vw, 70px)" margin="0 10px 0 0" />
 			<div>
 				<LargeText>Блог</LargeText>
 				<SmallText>веб-разработчика</SmallText>
 			</div>
-		</div>
+		</Link>
 	);
 };
 

@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-interface IconProps {
-	className?: string;
+interface IconProps extends React.HTMLAttributes<HTMLElement> {
 	id: string;
 	size?: string;
 	margin?: string;
