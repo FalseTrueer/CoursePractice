@@ -1,24 +1,25 @@
 import React from 'react';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Header } from '../components';
 import styled from 'styled-components';
 
-const Content = styled.div`
-	padding: clamp(20px, 5vw, 120px) 0;
-`;
+const Content = styled.div``;
 
 const H1 = styled.h1`
 	font-size: 40px;
 	text-align: center;
 `;
 
-const Header = () => {
-	return (
-		<div>
-			<h1>Header</h1>
-		</div>
-	);
-};
+const AppColumn = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	width: clamp(320px, 80vw, 1000px);
+	background-color: rgb(255, 255, 255);
+	margin: 0 auto;
+`;
 
 const Footer = () => {
 	return (
@@ -30,10 +31,9 @@ const Footer = () => {
 
 export const App = () => {
 	return (
-		<>
+		<AppColumn>
 			<Header />
 			<Content>
-				<i className="fa fa-camera-retro fa-spin"></i>
 				<H1>Content</H1>
 				<Routes>
 					<Route path="/" element={<div>Home</div>} />
@@ -46,6 +46,6 @@ export const App = () => {
 				</Routes>
 			</Content>
 			<Footer />
-		</>
+		</AppColumn>
 	);
 };
