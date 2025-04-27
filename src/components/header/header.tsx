@@ -1,11 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Logo } from './components/logo/logo';
+import { ControlPanel, Logo } from './components';
+
+const Discription = styled.div`
+	font-style: italic;
+	font-size: clamp(10px, 2vw, 18px);
+`;
 
 const HeaderContainer: React.FC<{ className?: string }> = ({ className }) => {
 	return (
 		<header className={className}>
 			<Logo />
+			<Discription>
+				Веб-технологии
+				<br />
+				Написание кода
+				<br />
+				Разбор ошибок <br />
+			</Discription>
+			<ControlPanel />
 		</header>
 	);
 };
@@ -17,4 +30,8 @@ export const Header = styled(HeaderContainer)`
 	position: sticky;
 	background-color: white;
 	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
 `;
