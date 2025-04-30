@@ -7,7 +7,11 @@ const Discription = styled.div`
 	font-size: clamp(10px, 2vw, 18px);
 `;
 
-const HeaderContainer: React.FC<{ className?: string }> = ({ className }) => {
+interface HeaderProps {
+	className?: string;
+}
+
+const HeaderContainer: React.FC<HeaderProps> = ({ className }) => {
 	return (
 		<header className={className}>
 			<Logo />

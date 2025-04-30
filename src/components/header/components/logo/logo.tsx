@@ -14,7 +14,11 @@ const SmallText = styled.p`
 	font-weight: 600;
 `;
 
-const LogoContainer: React.FC<{ className?: string }> = ({ className }) => {
+interface LogoProps {
+	className?: string;
+}
+
+const LogoContainer: React.FC<LogoProps> = ({ className }) => {
 	return (
 		<Link className={className} to={'/'}>
 			<Icon id="fa-code" size="clamp(20px, 7vw, 70px)" margin="0 10px 0 0" />
