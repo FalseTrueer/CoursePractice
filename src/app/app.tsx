@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Header } from '../components';
+import { Header, Footer } from '../components';
 import styled from 'styled-components';
 
 const Content = styled.div``;
@@ -20,14 +20,6 @@ const AppColumn = styled.div`
 	background-color: rgb(255, 255, 255);
 	margin: 0 auto;
 `;
-
-const Footer = () => {
-	return (
-		<div>
-			<p>Footer</p>
-		</div>
-	);
-};
 
 export const App = () => {
 	return (
