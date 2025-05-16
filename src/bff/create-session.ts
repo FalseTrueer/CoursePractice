@@ -1,8 +1,8 @@
-import { User, AdminSession, ModeratorSession, ResponseResult } from './types';
-import { removeComment } from './session/removeComment';
+import { User, AdminSession, ModeratorSession, AuthResult } from './types';
+import { removeComment } from './session/remove-comment';
 import { ROLE } from '../constants/role';
 
-export const createSession = (roleId: number) => {
+export const createSession = (roleId?: number) => {
 	let session: Partial<AdminSession & ModeratorSession> = {
 		logOut() {
 			Object.keys(session).forEach((key) => delete (session as any)[key]);

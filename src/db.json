@@ -3,16 +3,16 @@
 		{
 			"id": "001",
 			"login": "admin",
-			"password": "admin",
+			"password": "admin123",
 			"registered_at": "2022-01-01",
 			"role_id": 0
 		},
 		{
 			"id": "002",
 			"login": "user",
-			"password": "user",
+			"password": "user123",
 			"registered_at": "2022-01-01",
-			"role_id": 3
+			"role_id": 2
 		}
 	],
 	"roles": [

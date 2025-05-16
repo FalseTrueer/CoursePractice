@@ -51,8 +51,10 @@ export const Footer = styled(FooterContainer)`
 	align-items: center;
 	gap: 15px;
 	bottom: 0;
+	right: 0;
+	left: 0;
 	height: max-content;
-	padding: 20px 40px;
+	padding: 20px clamp(10px, 2vw, 40px);
 	box-shadow: 0 0 15px black;
 	position: sticky;
 	background-color: white;

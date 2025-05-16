@@ -29,11 +29,13 @@ const HeaderContainer: React.FC<HeaderProps> = ({ className }) => {
 
 export const Header = styled(HeaderContainer)`
 	height: max-content;
-	padding: 20px 40px;
+	padding: 20px clamp(10px, 2vw, 40px);
 	box-shadow: 0 0 15px black;
 	position: sticky;
 	background-color: white;
 	top: 0;
+	right: 0;
+	left: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
